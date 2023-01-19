@@ -53,10 +53,10 @@ int main()
    struct nod*d=p;
    printf("Materie: %s; Profesor: %s; Nume: %s", d->mat, d->prof, d->nume);
    for(struct nod*c=p->adr;c!=0;c=c->adr)
-  { if(strcmp(d->mat,c->mat) || strcmp(d->prof,c->prof) || strcmp(d->nume,c->nume))
-   printf("Materie: %s; Profesor: %s; Nume: %s", c->mat, c->prof, c->nume);
-   d=c;
-  }
+    { if(strcmp(d->mat,c->mat) || strcmp(d->prof,c->prof) || strcmp(d->nume,c->nume))
+      printf("Materie: %s; Profesor: %s; Nume: %s", c->mat, c->prof, c->nume);
+      d=c;
+    }
 
    return 0;
 }
